@@ -1,6 +1,6 @@
 Feature: validating place API
 
-@AddPlace
+@AddPlace @Regression
 Scenario Outline: Verify place is added successfully with different values
 Given Add place API payload with parameters "<name>" "<language>" and "<address>"
 When user calls "AddPlaceAPI" with "Post" http method 
@@ -18,7 +18,7 @@ Examples:
 #|Vikas  |Kannada |Bangalore|
 #|Vasco  |Konkani |Goa      |
 
-@del
+@del @Regression
 Scenario: verify if Delete place functionality is working 
 Given Delete place payload
 When user calls "deletePlaceAPI" with "Post" http method
