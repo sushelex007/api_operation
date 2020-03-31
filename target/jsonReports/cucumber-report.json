@@ -1,0 +1,161 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2020-03-31T11:01:55.059Z",
+        "line": 15,
+        "name": "Verify place is added successfully with different values",
+        "description": "",
+        "id": "validating-place-api;verify-place-is-added-successfully-with-different-values;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 6388000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Add place API payload with parameters \"sushil\" \"hindi\" and \"laxmipur\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"sushil\"",
+                  "offset": 38
+                },
+                {
+                  "val": "\"hindi\"",
+                  "offset": 47
+                },
+                {
+                  "val": "\"laxmipur\"",
+                  "offset": 59
+                }
+              ],
+              "location": "stepDefinition.PlaceAPI.add_place_API_payload_with_parameters_and(java.lang.String,java.lang.String,java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 261026000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user calls \"AddPlaceAPI\" with \"Post\" http method",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"AddPlaceAPI\"",
+                  "offset": 11
+                },
+                {
+                  "val": "\"Post\"",
+                  "offset": 30
+                }
+              ],
+              "location": "stepDefinition.PlaceAPI.user_calls_with_http_method(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 112000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "the API call got successfull with status code 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 46
+                }
+              ],
+              "location": "stepDefinition.PlaceAPI.the_API_call_got_successfull_with_status_code(java.lang.Integer)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 233000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "\"status\" is response body is \"OK\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"status\"",
+                  "offset": 0
+                },
+                {
+                  "val": "\"OK\"",
+                  "offset": 29
+                }
+              ],
+              "location": "stepDefinition.PlaceAPI.is_response_body_is(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 150000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "\"scope\" is response body is \"APP\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"scope\"",
+                  "offset": 0
+                },
+                {
+                  "val": "\"APP\"",
+                  "offset": 28
+                }
+              ],
+              "location": "stepDefinition.PlaceAPI.is_response_body_is(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 209965000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "verify place_id created maps to \"sushil\" using \"getPlaceAPI\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"sushil\"",
+                  "offset": 32
+                },
+                {
+                  "val": "\"getPlaceAPI\"",
+                  "offset": 47
+                }
+              ],
+              "location": "stepDefinition.PlaceAPI.verify_place_id_created_maps_to_using(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@AddPlace"
+          }
+        ]
+      }
+    ],
+    "name": "validating place API",
+    "description": "",
+    "id": "validating-place-api",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/features/placeValidation5.feature",
+    "tags": []
+  }
+]
