@@ -13,10 +13,10 @@ And verify place_id created maps to "<name>" using "getPlaceAPI"
 Examples:
 |name   |language|address  |
 |sushil |hindi   |laxmipur |
-#|jaydeep|Marathi |Nasik    |
-#|Nikhil |Telgu   |Hyderabad|
-#|Vikas  |Kannada |Bangalore|
-#|Vasco  |Konkani |Goa      |
+|jaydeep|Marathi |Nasik    |
+|Nikhil |Telgu   |Hyderabad|
+|Vikas  |Kannada |Bangalore|
+|Vasco  |Konkani |Goa      |
 
 @del @Regression
 Scenario: verify if Delete place functionality is working 
